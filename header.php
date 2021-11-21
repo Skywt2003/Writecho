@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
 
+    <?php $this->options->headerCode(); ?>
     <?php $this->header(); ?>
 </head>
 

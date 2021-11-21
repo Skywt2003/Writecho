@@ -67,6 +67,12 @@ function themeConfig($form)
         _t('动手画一个 404 页面吧！')
     );
     $form->addInput($e404ImgUrl);
+
+    $headerCode = new Typecho_Widget_Helper_Form_Element_Textarea('headerCode', NULL, NULL, _t('头部代码'), _t('在头部添加的代码'));
+    $form->addInput($headerCode);
+
+    $footerCode = new Typecho_Widget_Helper_Form_Element_Textarea('footerCode', NULL, NULL, _t('页脚代码'), _t('在页脚添加的代码'));
+    $form->addInput($footerCode);
 }
 
 function themeFields($layout)

@@ -7,6 +7,7 @@
     <img src="<?php $this->options->themeUrl('img/'.$this->options->footerImgUrl); ?>">
 </footer>
 
+<?php $this->options->footerCode(); ?>
 <?php $this->footer(); ?>
 </body>
 </html>
